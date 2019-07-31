@@ -1,0 +1,47 @@
+{
+  "name": "AwesomeAIScholarServices",
+  "version": "0.0.1",
+  "description": "",
+  "engines": {
+    "node": "5.9.1"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-animate": "^1.5.8",
+    "angular-ui-bootstrap": "^2.2.0",
+    "angular-ui-router": "^1.0.0-beta.3",
+    "body-parser": "~1.0.0",
+    "bootstrap": "^3.3.7",
+    "connect-flash": "~0.1.1",
+    "cookie-parser": "~1.0.0",
+    "ejs": "2.4.1",
+    "express": "4.13.3",
+    "express-session": "~1.0.0",
+    "gulp": "^3.9.1",
+    "gulp-angular-templatecache": "^2.0.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^5.0.0",
+    "gulp-sourcemaps": "^2.2.0",
+    "gulp-watch": "^4.3.10",
+    "lodash": "^4.17.2",
+    "morgan": "~1.0.0",
+    "mysql": "^2.5.4",
+    "passport": "~0.1.17",
+    "passport-google-oauth": "~0.1.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "watson",
+    "AI",
+    "scholar",
+    "academia"
+  ],
+  "license": "MIT"
+}

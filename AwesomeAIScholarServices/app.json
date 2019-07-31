@@ -1,0 +1,8 @@
+{
+  "name": "Awesome AI Scholar REST Services",
+  "description": "REST services for AI Scholar",
+  "repository": "https://github.gatech.edu/dstevens34/6460",
+  "logo": "http://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["node", "express", "static","ai","scholar","awesome"],
+  "image": "heroku/nodejs"
+}

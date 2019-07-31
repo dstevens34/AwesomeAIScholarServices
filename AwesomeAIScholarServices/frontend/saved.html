@@ -1,0 +1,14 @@
+
+<button type="button" class="btn btn-primary" ng-click="$ctrl.goBack()" style="margin-bottom: 25px;">Go Back</button>
+
+<div class="panel panel-info" ng-repeat="paper in $ctrl.papers">
+  <div class="panel-heading" ng-click="$ctrl.goToPaper(paper)" style="cursor: pointer;">
+    {{paper.Title}} 
+  </div>
+  <div class="panel-body">
+    <div>
+      <button type="button" class="btn btn-warning" ng-click="$ctrl.unsavePaper(paper)">Unsave</button>
+    </div>
+    <a ng-href="{{paper.URL}}" target="_blank">{{paper.URL}}</a>
+  </div>
+</div>

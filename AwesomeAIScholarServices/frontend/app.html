@@ -1,0 +1,26 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">AASS</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li ng-if="!$ctrl.user"><a href="/auth/google">Log In</a></li>
+        <li ng-if="$ctrl.user"><a href="/#/saved">Saved Papers</a></li>
+        <li ng-if="$ctrl.user"><a href="/auth/google">Log Out</a></li>
+        <li ng-if="$ctrl.user"><div ng-style="{'background-image': 'url(' + $ctrl.user._json.picture + ')'}" class="profile-picture"></div></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron">
+    <div class="container">
+        <h1>Awesome AI Scholar Service</h1>
+        <p>by Team Awesome: <small><i>Aaron Buxbaum, Ali Murtaza, David Stevens</i></small></p>
+        <!--<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>-->
+    </div>
+</div>
+
+<div ui-view></div>

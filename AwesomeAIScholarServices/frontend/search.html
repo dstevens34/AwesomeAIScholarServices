@@ -1,0 +1,26 @@
+<h3 class="container-fluid">Search for academic papers...</h3>
+<div class="col-lg-12">
+    <form ng-submit="$ctrl.sendRequest()" class="input-group input-group-lg">
+        <input type="text" 
+               ng-model="$ctrl.input" 
+               class="form-control" 
+               placeholder="Search for..." 
+               ng-disabled="$ctrl.isLoading">
+        <span class="input-group-btn">
+            <button class="btn btn-default" ng-disabled="$ctrl.isLoading" ng-click="$ctrl.sendRequest()" type="submit">Go!</button>
+        </span>
+    </form>
+</div>
+
+<p><hr></p>
+
+<div ng-if="$ctrl.isLoading" class="container-fluid">
+    <uib-progressbar class="progress-striped active" value="100" type="info">
+        Loading...
+    </uib-progressbar>
+    <button class="btn btn-danger" type="button" ng-click="$ctrl.cancelRequest()">Cancel</button>
+</div>
+
+<div ui-view></div>
+
+<!--<awesome-results papers="$ctrl.papers" search="$ctrl.search(tag)"></awesome-results>-->

@@ -1,0 +1,21 @@
+<div style="margin-top: 75px;">
+  <div class="panel panel-info" ng-repeat="paper in $ctrl.papers">
+    <div class="panel-heading" ng-click="$ctrl.goToPaper(paper)" style="cursor: pointer;">
+      {{paper.Title}} 
+      <span class="label label-default" ng-class="$ctrl.getLabelType(paper)">{{$ctrl.getRelevance(paper)}}</span>
+    </div>
+    <div class="panel-body">
+      <div>
+        <button type="button" class="btn btn-success" ng-click="$ctrl.savePaper(paper)" ng-if="$ctrl.user">Save</button>
+        <button type="button" class="btn btn-success" ng-click="$ctrl.upvotePaper(paper)">Useful</button>
+        <button type="button" class="btn btn-warning" ng-click="$ctrl.downvotePaper(paper)">Not useful</button>
+      </div>
+      <a ng-href="{{paper.URL}}" target="_blank">{{paper.URL}}</a>
+      <div>
+        <span ng-repeat="tag in $ctrl.getTags(paper)" ng-click="$ctrl.searchTag(tag)" class="label label-info" style="cursor: pointer; margin-right: 3px;">
+          {{tag}}
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
